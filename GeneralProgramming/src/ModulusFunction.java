@@ -12,32 +12,8 @@ public class ModulusFunction {
     public static void main(String[] args){
         int a = 7;
         int b = 4;
-//        System.out.println(modulus(a, b));
-//        System.out.println(modulus(b, a));
-        int c;
         
-        //Iterative version
-        if(a < b){
-            while(a <= b){
-                b = b-a;
-            }
-            c = b;
-        }
-        else{
-            while(b <= a){
-                a = a-b;
-            }
-            c = a;
-        }
-        System.out.println("Iterative function: " + c);
-        
-        if(a > b){
-            c = modulus(a, b);
-        }
-        else{
-            c = modulus(b, a);
-        }
-        System.out.println("Recursive function: " + c);
+        System.out.printf("Recursive solution to %dmod%d is %d\n", b, a, modulus(b, a));
         
     }
     
